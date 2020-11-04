@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--tileMode="repeat"-->
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bitmap_drawable"
+                android:gravity="center"
+                android:text="" />
+
+            <!--tileMode="mirror"-->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bitmap_drawable_mirror"
+                android:gravity="center"
+                android:text="" />
+
+            <!--tileMode="clamp"-->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bitmap_drawable_clamp"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!--圆角矩形-->
+            <TextView
+                android:id="@+id/test_shape"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_drawable" />
+
+            <!--虚线描边-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_drawable_stroke"
+                android:text="hello world" />
+
+            <!--设置padding和size-->
+            <TextView
+                android:id="@+id/test_size"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_drawable_size_padding"
+                android:text="hello world" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!--centerColor  绿色-->
+            <!--endColor  蓝色-->
+            <!--startColor  红色-->
+            <!--从左到右，线性渐变-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_drawable_gradient_linear"
+                android:gravity="center"
+                android:text="" />
+
+            <!--centerColor  绿色-->
+            <!--endColor  蓝色-->
+            <!--startColor  红色-->
+            <!--从内到外，径向渐变-->
+            <!--渐变半径60-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_drawable_gradient_radius"
+                android:gravity="center"
+                android:text="" />
+
+            <!--centerColor  绿色-->
+            <!--endColor  蓝色-->
+            <!--startColor  红色-->
+            <!--扫描渐变-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_drawable_gradient_sweep"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!--由线性渐变变化为径向渐变-->
+            <TextView
+                android:id="@+id/test_transition"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/transition_drawable"
+                android:gravity="center"
+                android:text="" />
+
+            <!--内嵌-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/inset_drawable"
+                android:text="hello world" />
+
+            <!--缩放70%-->
+            <TextView
+                android:id="@+id/test_scale"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/scale_drawable"
+                android:text="hello world"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!--Drawable放在容器底部，竖直剪裁，从顶部开始剪裁-->
+            <ImageView
+                android:id="@+id/test_clip"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/clip_drawable"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/test_custom_drawable"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="custom drawable"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:hint="@string/hello_world" />
+    </LinearLayout>
+
+</ScrollView>

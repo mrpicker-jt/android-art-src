@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chong.chapter01"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" /> -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.chong.chapter01.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chong.chapter01.SecondActivity"
+            android:configChanges="screenLayout"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:taskAffinity="com.chong.task1" />
+        <activity
+            android:name="com.chong.chapter01.ThirdActivity"
+            android:configChanges="screenLayout"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.chong.task1">
+            <intent-filter>
+                <action android:name="com.chong.charpter01.c" />
+                <action android:name="com.chong.charpter01.d" />
+
+                <category android:name="com.chong.category.c" />
+                <category android:name="com.chong.category.d" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
